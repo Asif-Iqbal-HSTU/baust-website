@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
 @import 'tailwindcss';
 
 @plugin 'tailwindcss-animate';
@@ -59,6 +61,9 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --font-poppins: "Poppins", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
 }
 
 :root {
@@ -152,13 +157,22 @@
     animation: marquee 40s linear infinite;
 }
 
-@keyframes scroll {
-    0%   { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
 }
 
-.animate-scroll {
-    display: inline-block;
-    animation: scroll 20s linear infinite;
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
 }
 
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-plex {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.font-garamond {
+    font-family: 'EB Garamond', serif;
+}

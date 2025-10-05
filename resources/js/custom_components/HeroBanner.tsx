@@ -105,7 +105,7 @@ export default function HeroBanner() {
                         text-white
                     "
                     >
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                        <h1 className="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">
                             Discipline. Knowledge. Morality.
                         </h1>
                         <p className="text-sm md:text-base mb-8 max-w-xl font-light">

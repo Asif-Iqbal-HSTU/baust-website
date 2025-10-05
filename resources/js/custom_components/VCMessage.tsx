@@ -43,10 +43,10 @@ export default function VCMessage() {
 
     return (
         <section className="max-w-screen-xl mx-auto px-4 md:px-8 py-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:divide-x divide-gray-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* Left Column: VC's Message */}
                 <div className="lg:pr-15">
-                    <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 inline-block pb-1">
+                    <h2 className="text-xl md:text-2xl font-bold text-gray-900 mt-8 mb-4 inline-block pb-1">
                         Honourable Vice Chancellor's Message
                     </h2>
 
@@ -69,7 +69,7 @@ export default function VCMessage() {
                         </p>
 
                         {/* Signature */}
-                        <p className="font-semibold text-gray-900 mt-2 text-lg clear-left">
+                        <p className="font-semibold text-gray-900 mt-2 mb-2 text-lg clear-left">
                             Brig Gen Mohammad Mobarak Hossain Majumder, psc <br /> Vice Chancellor, BAUST
                         </p>
                     </div>
@@ -78,7 +78,7 @@ export default function VCMessage() {
 
                 {/* Right Column: Important Events Slider */}
                 <div className="lg:pl-10">
-                    <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 inline-block pb-1">
+                    <h2 className="text-xl md:text-2xl font-bold text-gray-900 mt-8 mb-6 inline-block pb-1">
                         Important Events
                     </h2>
 

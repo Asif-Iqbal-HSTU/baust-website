@@ -6,6 +6,8 @@ import GreenButton from "@/custom_components/GreenButton";
 import WhiteButton from "@/custom_components/WhiteButton";
 import HeroBanner from '@/custom_components/HeroBanner';
 import VCMessage from '@/custom_components/VCMessage';
+import Academics from '@/custom_components/Academics';
+import Facilities from '@/custom_components/Facilities';
 export default function Home() {
     return (
         <>
@@ -17,64 +19,9 @@ export default function Home() {
 
             <VCMessage />
 
+            <Academics />
 
-
-            {/* About Section */}
-            {/*<section className="py-16 bg-gray-50 text-center">
-                <h2 className="text-3xl font-bold text-gray-800">About BAUST</h2>
-                <p className="mt-4 max-w-3xl mx-auto text-gray-600 leading-relaxed">
-                    Bangladesh Army University of Science and Technology (BAUST), established in 2015 in Saidpur Cantonment,
-                    is a pioneering higher education institution under the supervision of the Bangladesh Army.
-                    Our mission is to produce skilled graduates with strong moral and ethical values, capable of serving
-                    the nation and competing globally.
-                </p>
-                <a href="/about" className="mt-6 inline-block text-green-700 font-semibold hover:underline">
-                    Learn More →
-                </a>
-            </section>*/}
-
-            {/* Programs Section */}
-            <section className="py-16 bg-white">
-                <h2 className="text-3xl font-bold text-center text-gray-800">Our Academic Programs</h2>
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 px-8">
-                    {["B.Sc. in CSE", "B.Sc. in EEE", "B.Sc. in CE", "BBA", "BA in English"].map((program, i) => (
-                        <motion.div key={i}
-                                    className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                        >
-                            <h3 className="text-xl font-semibold text-green-700">{program}</h3>
-                        </motion.div>
-                    ))}
-                </div>
-                <div className="mt-6 text-center">
-                    <a href="/programs" className="text-green-700 font-semibold hover:underline">
-                        View All Programs →
-                    </a>
-                </div>
-            </section>
-
-            {/* Notices Section */}
-            <section className="py-16 bg-gray-100">
-                <h2 className="text-3xl font-bold text-center text-gray-800">Latest Notices & News</h2>
-                <div className="mt-10 max-w-4xl mx-auto space-y-4">
-                    {[
-                        "📢 Admission Circular – Spring 2025",
-                        "📢 Midterm Exam Routine – Fall 2025",
-                        "📢 Convocation Announcement",
-                    ].map((notice, i) => (
-                        <div key={i} className="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
-                            <p className="text-gray-700">{notice}</p>
-                        </div>
-                    ))}
-                </div>
-                <div className="mt-6 text-center">
-                    <a href="/notices" className="text-green-700 font-semibold hover:underline">
-                        View All Notices →
-                    </a>
-                </div>
-            </section>
+            <Facilities />
 
             {/* Why BAUST Section */}
             <section className="py-16 bg-white text-center">
